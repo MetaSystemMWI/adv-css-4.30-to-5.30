@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #gra{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* background-image: radial-gradient(circle,
+            yellow 20%,red 50%, green 100%); */
+          background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+    </style>
+    <div id="gra"></div>
+
+    <style>
+        #conic{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* background-image:conic-gradient(red, yellow, green
+            , black, blue, indigo); */
+/* 
+            background-image:conic-gradient(red 45deg, yellow 60deg, green 210deg);
+            border-radius: 50%; */
+
+
+            /* background-image: conic-gradient(from 90deg,
+                red 0deg, 
+                red 90deg,
+                yellow 90deg,
+                yellow 180deg, 
+                green 180deg,
+                green 270deg,
+                blue 270deg
+            ); */
+            /* background-image: conic-gradient(at 60% 45%,
+            red,
+            yellow, green
+            ); */
+
+            /* background-image: repeating-conic-gradient(
+            red 10%,
+            yellow 20%,
+            green 30%
+            ); */
+
+            background-image: repeating-conic-gradient(
+            red 0deg 10deg, 
+            yellow 10deg 20deg,
+            blue 20deg 30deg
+            );
+            border-radius: 50%;
+        }
+    </style>
+    <br>
+    <div id="conic"></div>
+</body>
+</html>
