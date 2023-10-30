@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text1{
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .text2{
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid black;
+            /* transform: translate(50px, 100px); */
+            /* transform: rotate(-20deg); */
+            /* transform: scale(0.5,0.5); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: skew(20deg, 10deg); */
+            /* scalex, skewy, skewx, scaley, translatex, translatey */
+            transform: matrix(1, -0.3, 0,1,0,0);
+
+        }
+    </style>
+</head>
+<body>
+    <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam neque ex atque rem ullam doloremque dolorum exercitationem architecto ipsam?</p>
+    <br>
+    <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam neque ex atque rem ullam doloremque dolorum exercitationem architecto ipsam?</p>
+
+    <div></div>
+</body>
+</html>
