@@ -2,76 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
- div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            transition: width 4s, height 4s, transform 4s;
-            /* transition-delay: 1s;   */
-        }
-        div:hover{
-            width: 300px;
-            height: 300px;
-            transform: rotate(180deg);
-        }
-    </style>
 </head>
 <body>
     <style>
-        /* 2D transform */
-        /* div{ */
-            /* width: 300px;
-            height: 100px;
-            background-color: yellow;
-            border: 1px solid black; */
-            /* translate, rotate, scaleX, scaleY, skewX, skewY, skew, scale, matrix */
-            /* transform:translate(50px, 100px); */
-            /* transform:rotate(-20deg); */
-            /* transform:scaleY(2); */
-            /* transform:skew(20deg); */
-            /* scaleX, skewx, skewY, scaleY, translateX, translateY */
-            /* transform:matrix(1, -0.3, 0, 1, 0,0); */
-        /* } */
-        /* 3D transform */
-        /* x, y, z */
-
-        /* div{
-            width: 300px;
-            height: 100px;
-            background-color: yellow;
-            border: 1px solid black; 
-            /* transform: rotateX(150deg);  */
-        /* } */ 
-
-        /* #y{
-            transform: rotateY(150deg);
-        }
-        #z{
-            transform: rotateZ(90deg);
-        } */
-        /* translateX,y,z, rotatex,y,z, scalex,y,z, skewx,y,z  */
-
         /* div{
             width: 100px;
             height: 100px;
             background-color: red;
-            transition: width 4s, height 4s, transform 4s;
-            transition-delay: 1s;  
-        }
-        div:hover{
-            width: 300px;
-            height: 300px;
-            transform: rotate(180deg);
+            position: relative;
+            animation-name: d;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            /* normal. reverse, alternate, alternate-reserve */
+            /* animation-direction:reverse ; */
+            /* ease, linear, ease-in, easer-out, ease-in-out,  */
+            /* animation-timing-function: ease; */
+            /* none, farwards, backwards, both */
+            /* animation-fill-mode: both; */
+        /* } */
+        /* @keyframes d {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: green;
+            }
         } */
-    </style>
-    <!-- <div>The is my text</div>
-    <div id="y">The is my text</div>
-    <div id="z">The is my text</div> -->
+        /* @keyframes d {
+            0% {background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {background-color: black;
+                left: 0px;
+                top: 0px;
+            }
+        /* } */ 
 
-    <div>transition div</div>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0px;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+    <div></div>
+
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Hello Meta System Miawnali</span>
+    </div>
 </body>
 </html>
