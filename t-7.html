@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div{
+            /* border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            /* verical, both */
+            /* overflow: auto; */
+        }
+
+        :root{
+            --blue:red;
+            --white:black;
+        }
+        body{
+            background-color: var(--white);
+        }
+        .container{
+            color: var(--blue);
+        }
+    </style> -->
+
+    <!-- <style>
+        body{
+            background-color: tan;
+            color: black;
+        }
+        @media screen and (max-width:992px) {
+            body{
+                background-color: blue;
+                color: white;
+            }
+        }
+        @media screen and (max-width:600px) {
+            body{
+                background-color: olive;
+                color: red;
+            }
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>hello my dear</h1>
+        <h1>hello my dear</h1>
+        <h1>hello my dear</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p> -->
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: space-evenly;
+
+        }
+    </style>
+    <div class="container">
+        <div style="order:4">1</div>
+        <div style="order:3">2</div>
+        <div style="order:5">3</div>
+        <div style="order:2">4</div>
+        <div style="order:1">5</div>
+    </div>
+</body>
+</html>
